@@ -6,6 +6,8 @@ using UnityEngine;
 public class Pooler : MonoBehaviour
 {
     public static Pooler SINGLETON;
+    private int amount = 1;
+
     public List <GameObject> PoolBalloon = new List <GameObject>();
 
     private void Awake(){
@@ -15,13 +17,13 @@ public class Pooler : MonoBehaviour
     public GameObject GetObjectInPool(string objectType, string[] subtypes){
         GameObject result = null;
         
-        PoolBalloon.Find(x => {
+        result = PoolBalloon.Find(x => {
             
             bool _result = x.name.Contains(objectType);
             
             foreach(string _subtype in subtypes){
                
-               if(_subtype != "" || _subtype != null || _subtype != "")
+               if(_subtype != "" || _subtype != null || _subtype != " ")
                
                _result = _result && x.name.Contains(_subtype);
                Debug.Log(_result); 
@@ -34,8 +36,6 @@ public class Pooler : MonoBehaviour
             PoolBalloon.Remove(result);
         }
 
-        
-        
         return result;
     }
 
@@ -43,5 +43,10 @@ public class Pooler : MonoBehaviour
         PoolBalloon.Add(_gameObject);
     }
 }
+        
+
+        
+        
+
         
         

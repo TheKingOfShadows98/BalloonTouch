@@ -506,7 +506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2741531301989065067}
-  - component: {fileID: 2880718851954732727}
+  - component: {fileID: 8241508542811458507}
   m_Layer: 0
   m_Name: Balloon_Blue_Variant
   m_TagString: Blue
@@ -530,7 +530,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2880718851954732727
+--- !u!114 &8241508542811458507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6289017013823965394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5f0b3718b5d32e46a60d42987f9c5eb, type: 3}
+  m_Script: {fileID: 11500000, guid: b8b62f57749e8a24eb1d6c7ea24e8c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6809477752101952994
